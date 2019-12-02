@@ -6,13 +6,13 @@ function getResult(){
     // Get Input
     const inputArray = fs.readFileSync(filename).toString().split("\n");
     // Reduce
-    var sumOfAll = inputArray.reduce(requiredFuel,0);
+    let sumOfAll = inputArray.reduce(requiredFuel,0);
     // Display Result
     console.log(sumOfAll);
 }
 
 function requiredFuel(allFuel, item, index) {
-    return allFuel + Math.floor( parseFloat(item) / 3 ) - 2;
+    return allFuel + Math.floor( parseInt(item) / 3 ) - 2;
 }
 
 getResult();
