@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const filename = 'day1/input.txt';
+const filename = 'day1/first.txt';
 
 function getResult(){
     // Get Input
@@ -15,4 +15,5 @@ function requiredFuel(allFuel, item, index) {
     return allFuel + Math.floor( parseInt(item) / 3 ) - 2;
 }
 
+// 3477353
 getResult();
