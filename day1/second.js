@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const filename = 'day1/first.txt';
+const filename = 'day1/input.txt';
 
 const getResult = () => {
     // Get Input
